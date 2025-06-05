@@ -49,6 +49,8 @@ public class ProductController {
 	public ResponseEntity<?> getProduct(@PathVariable("id") long id) {
 
 		ResponseProduct rp = ps.getProduct(id);
+		
+		log.debug("Response Product : " + rp);
 
 		System.out.println(rp);
 
