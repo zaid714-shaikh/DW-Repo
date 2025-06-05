@@ -50,6 +50,10 @@ public class ProductController {
 
 		ResponseProduct rp = ps.getProduct(id);
 
+		
+		log.debug("Response Product : " + rp);
+
+
 		System.out.println(rp);
 
 		return new ResponseEntity(rp, HttpStatus.OK);
